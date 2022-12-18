@@ -64,7 +64,7 @@ void monty_div(stack_t **stack, unsigned int line_num)
 		exit(EXIT_FAILURE);
 	}
 
-	(*stack)->next->n = abs((*stack)->next->n / (*stack)->n);
+	(*stack)->next->n /= (*stack)->n;
 	monty_pop(stack, line_num);
 }
 

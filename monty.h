@@ -71,6 +71,12 @@ void monty_nop(stack_t **stack, unsigned int line_num);
 void monty_sub(stack_t **stack, unsigned int line_num);
 void monty_div(stack_t **stack, unsigned int line_num);
 void monty_mul(stack_t **stack, unsigned int line_num);
+void monty_mod(stack_t **stack, unsigned int line_num);
+void monty_pchar(stack_t **stack, unsigned int line_num);
+void monty_pstr(stack_t **stack, unsigned int line_num);
+void monty_rotl(stack_t **stack, unsigned int line_num);
+void monty_queue(stack_t **stack, unsigned int line_num);
+void monty_stack(stack_t **stack, unsigned int line_num);
 
 /* ERROR MESSAGES AND CODES */
 void usage_err(void);
@@ -88,7 +94,7 @@ void sub_err(unsigned int line_num);
 void addqueue(stack_t **stack, int n);
 void addnode(stack_t **stack, int n);
 void free_stack(stack_t *stack);
-void f_queue(stack_t **stack, unsigned int line_num);
+void f_stack(stack_t **stack, unsigned int line_num);
 int execute(char *content, stack_t **stack, unsigned int line_num, FILE *file);
 
 #endif

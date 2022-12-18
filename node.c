@@ -24,12 +24,12 @@ void addnode(stack_t **stack, int n)
 }
 
 /**
- * f_queue - prints the top
+ * monty_queue - prints the top
  * @stack: stack head
  * @line_num: line_number
  * Return: no return
 */
-void f_queue(stack_t **stack, unsigned int line_num)
+void monty_queue(stack_t **stack, unsigned int line_num)
 {
 	(void)stack;
 	(void)line_num;

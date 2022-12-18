@@ -20,6 +20,12 @@ int execute(char *content, stack_t **stack, unsigned int line_num, FILE *file)
 		{"sub", monty_sub},
 		{"div", monty_div},
 		{"mul", monty_mul},
+		{"mod", monty_mod},
+		{"pchar", monty_pchar},
+		{"pstr", monty_pstr},
+		{"rotl", monty_rotl},
+		{"queue", monty_queue},
+		{"stack", monty_stack},
 		{NULL, NULL}
 	};
 	unsigned int i = 0;
