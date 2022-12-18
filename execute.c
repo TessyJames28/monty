@@ -15,6 +15,11 @@ int execute(char *content, stack_t **stack, unsigned int line_num, FILE *file)
 		{"pint", monty_pint},
 		{"pop", monty_pop},
 		{"swap", monty_swap},
+		{"add", monty_add},
+		{"nop", monty_nop},
+		{"sub", monty_sub},
+		{"div", monty_div},
+		{"mul", monty_mul},
 		{NULL, NULL}
 	};
 	unsigned int i = 0;

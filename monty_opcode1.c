@@ -107,8 +107,9 @@ void monty_swap(stack_t **stack, unsigned int line_num)
 
 	*stack = (*stack)->next;
 	(*stack)->prev = NULL;
+	if (temp->next)
+		temp->next->prev = temp;
 	temp->next = (*stack)->next;
 	temp->prev = *stack;
 	(*stack)->next = temp;
-	temp->next->prev = temp;
 }
