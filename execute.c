@@ -24,6 +24,7 @@ int execute(char *content, stack_t **stack, unsigned int line_num, FILE *file)
 		{"pchar", monty_pchar},
 		{"pstr", monty_pstr},
 		{"rotl", monty_rotl},
+		{"rotr", monty_rotr},
 		{"queue", monty_queue},
 		{"stack", monty_stack},
 		{NULL, NULL}
